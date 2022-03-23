@@ -11,7 +11,7 @@
  * [COMP133 - Computer and Programming](https://github.com/Tariq0Odeh/University/tree/main/COMP133%20-%20Computer%20and%20Programming) 
  * [ENEE3309 - Communication Systems](https://github.com/Tariq0Odeh/University/tree/main/ENEE3309%20-%20Communication%20Systems) 
  * [COMP2421 - Data Structure and Algorithms](https://github.com/Tariq0Odeh/University/tree/main/COMP2421%20-%20Data%20Structure%20and%20Algorithms) 
- * []() 
+ * [ENCS234 - Digital Systems](https://github.com/Eyab0/University/tree/main/ENCS3310%20-%20Advanced%20Digital%20Systems%20Design) 
  * []() 
  * []() 
  * []() 
