@@ -11,5 +11,5 @@ ___________________________________________________________
 # ENCS3130 Course Projects
 Project 1 --> Design and write a shell script program that does basic dataset preprocessing and manipulations.
 
-Project 2 -->
+Project 2 --> A python code to create and solve a Sudoku puzzle. 
 ___________________________________________________________
