@@ -1,0 +1,44 @@
+#include <stdio.h>
+//traverses in forward as well as backward direction in one iteration.
+void Cocktail(int a[], int n){
+    int is_swapped = 1 ;
+    int begin = 0 , i ;
+    int temp ;
+
+    while(is_swapped){
+        is_swapped = 0 ;
+        for (i = begin ; i < n-1 ; ++i){ //traverses in forward
+            if (a[i] > a[i + 1]){
+            temp = a[i] ;
+            a[i]=a[i+1] ;
+            a[i+1]=temp ;
+            is_swapped = 1 ;
+            }
+        }
+        if (!is_swapped)
+            break ;
+        is_swapped = 0 ;
+        for (i = n-2 ; i >= begin ; --i){ //traverses backward
+            if (a[i] > a[i + 1]){
+                temp = a[i] ;
+                a[i]=a[i+1] ;
+                a[i+1]=temp ;
+                is_swapped = 1 ;
+            }
+        }
+        begin++ ;
+    }
+}
+
+int main(){
+    int arr[] = {5, 4, 7, 2, 11, 14, 6} ;
+    int n = sizeof(arr) / sizeof(arr[0]) ;
+    Cocktail(arr , n) ;
+    printf("Sorted array :\n") ;
+     for (int i = 0 ; i < n ; i++)
+        printf("%d ", arr[i]) ;
+    printf("\n") ;
+    return 0 ;
+}//Tariq Nazieh Odeh 1190699
+
+

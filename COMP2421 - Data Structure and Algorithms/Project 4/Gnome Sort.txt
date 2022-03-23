@@ -1,0 +1,36 @@
+#include  <stdio.h>
+#include <stdlib.h>
+
+void Gnome_Sort(int *arr , int size){
+   int temp ;
+   for(int a =1 ; a<size ; ){
+       //if it is in the correct order, then it advances to the two adjacent elements
+       if(arr[a-1] <= arr[a])
+           ++a ;
+       else{//if it is in the wrong order, then he replaces them and looks at the previous elements
+           temp = arr[a] ;
+           arr[a] = arr[a-1] ;
+           arr[a-1] = temp ;
+           --a ;
+           if(a == 0)
+               a = 1 ;
+       }
+   }
+}
+
+int main(){
+	int arr[] = { 5, 4, 7, 2, 11, 14, 6 };
+	size_t n = sizeof(arr)/sizeof(arr[0]);
+    printf("Original Array:\n");
+    for (int i = 0; i < n ; i++)
+        printf("%d ", arr[i]);
+    printf("\nSorted Array:\n");
+	Gnome_Sort(arr , n) ;
+	for (int i = 0; i < n; ++i)
+		printf("%d ", arr[i]);
+	return 0 ;
+}//Tariq Nazieh Odeh 1190699
+
+
+
+
