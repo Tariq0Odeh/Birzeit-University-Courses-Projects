@@ -1,0 +1,354 @@
+18 6 Rummana 88
+13 19 Tiinnik 34
+5 20 At Tayba 94
+1 20 Arabbuna 43
+2 5 Zububa 50
+3 21 Al Jalama 88
+22 19 Silat al Harithiya al 94
+22 14 As Saaida 90
+4 25 Anin 7
+25 24 Arrana 31
+26 22 Deir Ghazala 66
+12 26 Faqqua 72
+24 27 Khirbet Suruj 12
+28 25 Al Yamun 34
+30 29 Umm arRihan 4
+21 30 Kafr Dan 9
+31 20 Khirbet AbdallahalYunis 32
+15 32 Dhaher alMalih 45
+32 33 Bartaa ashSharqiya 63
+34 28 Al Araqa 74
+29 34 Al Jameelat 38
+10 35 Beit Qad 67
+37 30 Tura alGharbiya 91
+38 37 Tura ashSharqiya 55
+20 38 Al Hashimiya 83
+39 17 Nazlat ashSheikhZeid 66
+26 39 At Tarem 52
+18 40 Khirbet alMuntaralGharbiya 72
+27 40 Jenin 54
+39 36 Jenin Camp 8
+38 42 Jalbun 45
+36 23 Aba 47
+43 34 Khirbet Masud 78
+29 43 Khirbet alMuntarashSharqiya 46
+9 44 Kafr Qud 91
+16 45 Deir AbuDaif 71
+40 46 Birqin 67
+27 47 Umm Dar 56
+48 44 Al Khuljan 86
+34 49 Wad adDabi 4
+35 50 Dhaher alAbed 41
+43 51 Zabda 90
+50 48 Yabad 14
+46 52 Kufeirit 84
+33 53 Imreiha 51
+52 53 Umm atTut 35
+42 51 Ash Shuhada 6
+33 54 Jalqamus 87
+53 54 Al Mughayyir 19
+51 55 Al Mutilla 45
+54 56 Bir alBasha 33
+50 59 Al Hafira 84
+60 31 Qabatiya  75
+57 60 Arraba 51
+55 62 Telfit 32
+61 62 Mirka 6
+49 63 Wadi Duoq 4
+62 63 Fahma alJadida 46
+64 58 Raba 52
+59 64 Misliya 11
+63 65 Al Jarba 55
+65 66 Az Zababida 43
+47 67 Fahma 75
+66 67 Az Zawiya 97
+56 68 Kafr Rai 7
+68 69 Al Kufeir 81
+36 70 Sir 8
+69 71 Ajja 91
+59 72 Anza 83
+73 64 Sanur 59
+72 73 Ar Rama 61
+74 72 Meithalun 48
+45 74 Al Judeida 31
+71 74 al Asaasa 57
+75 73 Al Attara 27
+72 75 Siris 52
+54 76 Jaba 21
+77 75 Al Fandaqumiya 71
+75 78 Silat adhDhahr 98
+77 78 Bardala 31
+79 77 Ein elBeida 1
+74 79 Kardala 31
+80 77 Ibziq 35
+79 80 Salhab 19
+63 81 Aqqaba 58
+62 83 Tayasir 95
+11 84 Al Farisiya 9
+60 85 Al Aqaba 75
+85 83 Ath Thaghra 62
+71 87 Al Malih 31
+87 79 Tubas 96
+88 80 Kashda 54
+87 88 Khirbet Yarza 53
+83 89 Ras alFara 8
+83 90 El FaraCamp 13
+91 26 Khirbet arRasalAhmar 23
+81 92 Wadi alFara 12
+89 92 Tammun 15
+41 93 Khirbet Atuf 35
+70 93 Khirbet Humsa 27
+53 94 Akkaba 65
+58 95 Qaffin 86
+94 96 Nazlat Isa 6
+78 97 An NazlaashSharqiya 74
+84 98 Baqa ashSharqiya 21
+92 99 An NazlaalWusta 26
+100 98 An NazlaalGharbiya 60
+92 101 Zeita 32
+99 101 Seida 39
+67 102 Illar 86
+101 102 Attil 83
+88 103 Deir alGhusun 14
+104 88 Al Jarushiya 10
+105 87 Al Masqufa 43
+91 106 Bala 10
+98 106 Iktaba 47
+107 105 Nur ShamsCamp 29
+102 108 Tulkarm Camp 94
+109 107 Tulkarm 54
+110 104 Anabta 22
+111 110 Kafr alLabad 19
+112 111 Kafa 31
+109 112 Al Haffasi 11
+96 113 Ramin 14
+76 114 Farun 37
+115 109 Shufa 23
+116 115 Khirbet Jubara 18
+117 116 Saffarin 97
+118 117 Beit Lid 8
+119 118 Ar Ras 91
+120 109 Kafr Sur 15
+114 119 Kur 85
+121 120 Kafr Zibad 84
+110 122 Kafr Jammal 91
+123 106 Kafr Abbush 97
+124 121 Bizzariya 4
+60 125 Burqa 13
+126 124 Yasid 87
+106 127 Beit Imrin 71
+104 128 Nisf Jubeil 38
+99 129 Sabastiya 4
+108 131 Ijnisinya 45
+127 132 Talluza 26
+132 133 An Naqura 22
+129 134 Al Badhan 39
+135 126 Deir Sharaf 65
+113 136 Asira ashShamaliya 19
+114 137 An Nassariya 26
+137 138 Zawata 21
+136 138 Al Aqrabaniya 3
+138 139 Qusin 77
+139 135 Beit Iba 28
+140 93 Beit Hasan 18
+130 140 Beit Wazan 98
+132 130 Ein BeitelMaCamp 39
+141 123 Ein Shibli 93
+98 141 Azmut 66
+131 142 Nablus 49
+95 143 Askar Camp 45
+144 141 Deir alHatab 77
+143 100 Sarra 59
+145 136 Salim 76
+93 146 Balata Camp 90
+123 147 Iraq Burin 73
+141 147 Tell 63
+148 145 Beit Dajan 22
+142 148 Rujeib 7
+143 144 Kafr Qallil 93
+140 146 Furush BeitDajan 24
+149 142 Madama 68
+148 150 Burin 85
+149 150 Beit Furik 89
+82 151 Asira alQibliya 11
+146 151 Awarta 85
+102 152 Urif 13
+134 152 Odala 88
+78 153 Huwwara 96
+103 153 Einabus 88
+86 154 Yanun 51
+151 154 Beita 57
+155 147 Ar Rajman 18
+138 156 Zeita Jammain 40
+154 157 Jammain 48
+153 159 Osarin 44
+90 160 Aqraba 78
+161 149 Zatara 51
+157 162 Tall alKhashaba 45
+150 163 Yatma 79
+164 161 Qabalan 84
+149 163 Jurish 20
+162 158 Qusra 53
+97 165 Talfit 33
+160 166 As Sawiya 44
+155 167 Majdal BaniFadil 49
+133 168 Al LubbanashSharqiya 38
+157 169 Qaryut 80
+170 166 Jalud 2
+170 171 Ammuriya 72
+156 172 Duma 28
+163 172 Falamya 73
+159 173 Kafr Qaddum 58
+158 174 Jit 47
+171 175 Baqat alHatab 9
+176 133 Hajja 9
+151 177 Jayyus 98
+108 178 Khirbet Sir 38
+152 178 Arab arRamadinashShamali 38
+177 179 Farata 99
+172 182 Immatin 24
+175 183 Al Funduq 39
+180 183 Qalqiliya 73
+165 184 An NabiElyas 9
+172 185 Kafr Laqif 7
+140 187 Arab AbuFarda 19
+168 187 Izbat atTabib 15
+188 180 Jinsafut 10
+188 186 Azzun 79
+189 183 Arab arRamadinalJanubi 6
+186 189 Isla 75
+190 181 Arab Al-Khouleh 46
+191 190 Wadi arRasha 97
+189 191 Habla 37
+192 164 Ras atTira 55
+178 192 Ras Atiya 32
+191 193 Ad Daba 33
+181 194 Kafr Thulth 67
+178 195 Izbat Jalud 9
+194 195 Al Mudawwar 17
+195 192 Izbat Salman 80
+179 196 Izbat alAshqar 13
+169 196 Beit Amin 37
+193 197 Sanniriya 16
+189 198 Azzun Atma 54
+173 199 Deir Istiya 86
+200 179 Qarawat BaniHassan 86
+196 200 Qira 98
+197 194 Kifl Haris 6
+182 203 Marda 99
+202 203 Biddya 32
+185 204 Haris 37
+203 204 Yasuf 35
+204 173 Mas-ha 68
+200 206 Iskaka 24
+163 207 Sarta 49
+207 202 Izbat AbuAdam 90
+209 205 Az Zawiya 15
+209 176 Salfit 25
+208 207 Rafat 77
+210 188 Bruqin 51
+210 201 Farkha 9
+211 209 Kafr adDik 45
+187 212 Deir Ballut 18
+196 213 Khirbet Qeis 82
+212 213 Marah Maalla 66
+206 214 Umm Salamuna 25
+213 214 Al Manshiya 44
+215 167 Tuqu 70
+184 215 Marah Rabah 92
+216 210 Beit Fajjar 3
+192 217 Al Maniya 5
+217 218 Kisan 19
+218 208 Arab arRashayida 46
+219 213 Khirbet adDeir 72
+206 220 Surif 29
+198 221 Al ArrubCamp 47
+221 222 Beit Ummar 90
+207 223 Jala 44
+220 224 Hitta 98
+214 225 Shuyukh alArrub 8
+217 226 Kharas  77
+215 227 Umm alButm 35
+199 228 Hamrush 42
+227 230 Nuba 34
+231 187 Beit Ula 94
+205 231 Sair 33
+230 232 Halhul 95
+222 233 Ash Shuyukh 71
+230 234 Tarqumiya 77
+229 234 Beit Kahil 8
+232 211 Beit Einun 80
+235 229 Qla Zeta 92
+234 236 Idhna 99
+231 237 Taffuh 57
+232 236 Beit Maqdum 64
+236 238 Al Baqa 63
+203 240 Hebron 18
+223 240 Al Bowereh 69
+241 235 Khallet Edar 8
+228 241 Deir Samit 18
+242 241 Bani Naim 73
+226 243 Khallet AlMasafer 39
+221 244 Beit Awwa 48
+245 233 Dura 66
+240 246 Qalqas 4
+240 247 Sikka 25
+233 248 Khirbet Salama 24
+233 249 Wadi Ubeid 18
+250 231 Fuqeiqis 1
+204 251 Khursa  8
+237 252 Tarrama  44
+253 242 Al FawwarCamp 57
+241 254 Al Majd 79
+239 255 Marah alBaqqar 49
+256 250 Hadab alFawwar 11
+195 257 Deir alAsalatTahta 69
+238 258 Al Heila 23
+259 238 Wadi ashShajina 36
+260 256 As Sura 37
+237 261 Deir Razih 86
+261 252 Ar Rihiya 49
+262 253 Zif 88
+251 262 Deir alAsalalFauqa 29
+256 263 Khallet alAqed 91
+244 264 Imreish 44
+265 260 Al Buweib 77
+258 265 Beit arRushatTahta 100
+219 266 Hadab alAlaqa 44
+252 266 Beit Mirsim 57
+249 267 Beit arRushalFauqa 22
+264 245 Karma  61
+263 261 Beit Amra 26
+268 255 Om Adaraj(ArabAlKaabneh 80
+224 268 Wadi alKilab 19
+225 269 Om Ashoqhan 100
+266 269 Khallet alMaiyya 92
+269 270 Kheroshewesh WalHadedeyah 34
+254 271 Om AlAmad(SahelWadiElma) 75
+270 273 Yatta 63
+274 273 Ad Deirat 93
+267 275 Khashem Adaraj 80
+276 272 Kurza ? 57
+268 276 Rabud 26
+248 277 Umm Lasafa 55
+278 275 Al Burj 96
+277 278 Um Al-Khair 39
+265 279 Al Karmil 36
+280 265 Khallet Salih 1
+247 281 Adh Dhahiriya 5
+243 282 At Tuwani 3
+262 283 Main 44
+284 276 An Najada 12
+268 284 Anab alKabir 9
+278 285 Khirbet Asafi 84
+286 259 Mantiqat ShibalBatin 26
+246 287 As Samu 61
+282 289 Wadi AlAmayer 38
+287 290 Khirbet TawilashShih 100
+289 290 Ar Ramadin 62
+291 285 Maghayir alAbeed 53
+292 293 Khirbet alFakheit 64
+294 292 Khirbet Bir al Idd 46
+281 294 Khirbet Zanuta 81
+290 294 Imneizil 65
+293 295 Arab al Fureijat 45

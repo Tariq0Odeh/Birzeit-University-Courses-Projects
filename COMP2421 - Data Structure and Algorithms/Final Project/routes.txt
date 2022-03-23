@@ -1,0 +1,7 @@
+
+
+Route from [16] to [61] has [841] distance and the whole route is: 
+16 45 Deir AbuDaif -> 45 74 Al Judeida -> 74 71 al Asaasa -> 71 69 Ajja -> 69 68 Al Kufeir -> 68 56 Kafr Rai -> 56 54 Bir alBasha -> 54 53 Al Mughayyir -> 53 52 Umm atTut -> 52 46 Kufeirit -> 46 40 Birqin -> 40 27 Jenin -> 27 24 Khirbet Suruj -> 24 25 Arrana -> 25 28 Al Yamun -> 28 34 Al Araqa -> 34 49 Wad adDabi -> 49 63 Wadi Duoq -> 63 62 Fahma alJadida -> 62 61 Mirka 
+
+Route from [254] to [75] has [521] distance and the whole route is: 
+254 241 Al Majd -> 241 228 Deir Samit -> 228 199 Hamrush -> 199 173 Deir Istiya -> 173 159 Kafr Qaddum -> 159 153 Osarin -> 153 78 Huwwara -> 78 75 Silat adhDhahr 
