@@ -1,0 +1,236 @@
+#!/bin/sh
+
+echo "    [Welcome to Data set preprocessing and manipulation]"
+echo "--> Please enter the filename: "
+
+#detecting file is exist or not
+while true                          #loop to keep read filename from user and stop if read the file and it is exist
+do
+  read filename                     #read the file name from user 
+  if [ -e "$filename" ]             #check if file exist
+  then
+     echo "--> File Readed successful"
+     break
+   else                              #if the file not exist
+      echo "**> No Such file"
+      echo "--> Please enter the filename again"
+      continue                       #to back read drom user
+   fi
+done
+
+#clear the  empty line from data file and put the data in tempfile
+grep -v '^$' $filename > tempfile
+
+
+firstline=$(head -1 tempfile)                    #cut the first line (features named) to use it to find the coulms number
+lastfour=$(echo -n $filename | tail -c 4)        #cut last 4 char to use it to check the extension file
+cols=$(echo $firstline | tr ',' '\12' | wc -l)   #find number of colums by use first line
+rows=$(($(cat tempfile | wc -l)))                #find number of rows by count the number of lines
+truecomma=$(echo "$rows * ($cols -1)" | bc)      #find number of commas that depands on numbers of colums and rows (shoud be true)
+testcomma=$(cat tempfile | awk -F ',' '{print NF-1}' | awk '{n+=$1} END{print n}')                                      #find the number of commas in the data file to compare it with true number of commas 
+truenumber=$(sed '1d' tempfile | grep '[^.,0-9]' | wc -w)      #find the number of char in file data to use it to check if file have any char index
+
+
+#checking format of the file
+if [ $lastfour = ".csv" ]    #check the file extension is it .csv or not
+then
+    echo "--> The file extension is correct"
+else
+   echo "**> The file extension is not correct !!"
+   exit
+fi
+
+
+if [ $truecomma -eq $testcomma ]    #check if the numbers of comma is true (that mean the format of data is true) 
+then
+   echo "--> The number of comma is correct"
+else
+   echo "**> The number of comma is not correct !!"
+   exit
+fi
+
+if [ $cols -eq 4 ]                #check the number of colums if equal 4 or not (must be 4 colums)
+then
+   echo "--> Number of colums is correct"
+else
+   echo "**> Number of colums is not correct !!"
+   exit
+fi
+
+if [ $truenumber -eq 0 ]          #check if the all data are numbers not char
+then
+   echo "--> The all data is numbers"
+else
+   echo "**> The data have character !!"
+   exit
+fi
+
+
+#function to get dimensions of dataset
+dimensions() {
+   #count number of colums
+   cols=$(echo $firstline | tr ',' '\12' | wc -l)
+   #count the number of rows
+   rows=$(cat tempfile | wc -l)
+
+   echo "Dimensions is $((rows - 1)) X $cols"
+   echo "Rows = $((rows - 1)), Columns = $cols"
+}
+
+
+#function to get Statistics of dataset
+statistics() {
+   #we do the substites on the data and save it in another file to use it in statistics
+   #we use the substites here to fill any empty index in table before find the statistics   
+   #because when find mean if the table have any empty index the output is inaccurate
+
+   echo "[!! IF the file contains any empty value]"
+   echo "[!! It automatically replaces it with the arithmetic mean of the column values]"
+
+   cols=$(echo $firstline | tr ',' '\12' | wc -l)
+   rows=$(($(cat tempfile | wc -l) - 1 ))
+
+   #find the total of first colum, first we use grep to get ride of first line (features)
+   #then use awk to extract first coulm, and then use awk again to find sum of numbers in colum field by field
+   total=$(grep [0-9] tempfile | awk -F, '{print $1}' | awk '{ total += $1} END{print total}')
+   #find the number of empty index in colum, fist use grep to get ride of first line
+   ##then use awk to extract first coulm, and then use awk again to count number of empty index
+   empty1=$(grep [0-9] tempfile | awk -F, '{print $1}' | awk '{if($1=="")empty1 +=1}; END{print empty1 +=0}') 
+   #find mean value by dividing total by number of rows subtracted form it number of empty index
+   mean1=$(echo "scale=3;$total/($rows-$empty1)" | bc)
+
+   #We use the same thing in other colums
+   total=$(grep [0-9] tempfile | awk -F, '{print $2}' | awk '{ total += $1} END{print total}')
+   empty2=$(grep [0-9] tempfile | awk -F, '{print $2}' | awk '{if($1=="")empty2 += 1} END{print empty2 +=0}')
+   mean2=$(echo "scale=3;$total/($rows-$empty2)" | bc)
+
+   total=$(grep [0-9] tempfile | awk -F, '{print $3}' | awk '{ total += $1} END{print total}')
+   empty3=$(grep [0-9] tempfile | awk -F, '{print $3}' | awk '{if($1=="")empty3 += 1} END{print empty3 +=0}')   
+   mean3=$(echo "scale=3;$total/($rows-$empty3)" | bc)
+
+   total=$(grep [0-9] tempfile | awk -F, '{print $4}' | awk '{ total += $1} END{print total}')
+   empty4=$(grep [0-9] tempfile | awk -F, '{print $4}' | awk '{if($1=="")empty4 += 1} END{print empty4 +=0}')
+   mean4=$(echo "scale=3;$total/($rows-$empty4)" | bc)
+
+   #to replace the empty index with mean value, first get the data from tempfile
+   #then use awk to check every colums if it has any empty index to replace it with mean value for the colum which it is located
+   #then replace all space with comma to maintain format then save data in datafile to use it to find statistics
+   cat tempfile | awk -F, '{if($1=="")$1='"$mean1"'}; {if($2=="")$2='"$mean2"'}; {if($3=="")$3='"$mean3"'}; {if($4=="")$4='"$mean4"'}; {print $0}' | tr ' ' ',' > datafile
+
+   printf "\nMin: "
+   for i in $(seq 1 $cols);    #loop to pass on all colums
+   do
+     #count min of the columns value
+     #use grep to get ride of first line, then use awk to get colum by colum
+     #then sort the colum descending and take the first value which it min
+     min=$(grep [0-9] datafile | awk -F, '{print $'$i'}' | sort -n | head -1)
+     printf "%5g" $min
+   done
+
+   printf "\nMax: "
+   for i in $(seq 1 $cols);    #loop to pass on all colums
+   do
+     #count max of the columns value 
+     #use grep to get ride of first line, then use awk to get colum by colum 
+     #then sort the colum ascending and take the first value which it max
+     max=$(grep [0-9] datafile | awk -F, '{print $'"$i"'}' | grep -v '^$' |sort -n | tail -1)
+     printf "%5g" $max
+   done
+  
+   printf "\nMean: "
+   for i in $(seq 1 $cols);    #loop to pass on all colums
+   do
+     #count mean of the columns value
+     #find the total of first colum, first we use grep to get ride of first line (features)
+     #then use awk to extract first coulm, and then use awk again to find sum of numbers in colum field by field
+     total=$(grep [0-9] datafile | awk -F, '{print $'"$i"'}' | awk '{ total += $1} END{print total}')
+     #find mean value by dividing total by number of rows
+     mean=$(echo "scale=5;$total/$rows" | bc)     
+     printf "%5g" $mean
+   done
+
+   #count STDEV of the columns value
+   printf "\nSTDEV "
+   
+   for i in $(seq 1 $cols)     #loop to pass on all colums
+   do
+      v1=0          #intialize variable and save in it the output of opration (number - mean)^2 and 
+      v2=0          #intialize variable and save in it sum of v1 for each colum
+      sd=0          #intialize variable nd save in it the output of opration (sqrt($v2 / ($rows - 1))
+      #find sum for each colum to find mean as it was previously explained
+      total=$(grep [0-9] datafile | awk -F, '{print $'"$i"'}' | awk '{ total += $1} END{print total}')
+      mean=$(echo "scale=5;$total/$rows" | bc) 
+    
+      for j in $(seq 1 $rows)   #loop to pass on each index
+      do
+         #we store each elemant in n to use it to find stdev
+         #delete first line and print each colum and take the elmeant by elemant from cloum
+         n=$(sed '1d' datafile | awk -F ',' '{print $'$i'}' | sed -n ''$j'p' | bc)
+         #find (x-x')^2 and save it in v1
+         v1=$(echo "($n - $mean) * ($n - $mean)" | bc)
+         #find the sum v1 for each colum
+         v2=$(echo "$v2 + $v1" | bc)
+      done
+   
+   sd=$( echo "sqrt($v2 / ($rows - 1))" | bc -l )   #final answer
+   printf "%15.7g" $sd
+   done
+   
+   printf "\n"
+}
+
+#function to substitute
+substitute() {
+   
+   printf "\nSubstituting\n"
+   cols=$(echo $firstline | tr ',' '\12' | wc -l)   
+   rows=$(($(cat tempfile | wc -l) - 1 ))
+
+   #find the total of first colum, first we use grep to get ride of first line (features)
+   #then use awk to extract first coulm, and then use awk again to find sum of numbers in colum field by field    
+   total=$(grep [0-9] tempfile | awk -F, '{print $1}' | awk '{ total += $1} END{print total}')
+   #find the number of empty index in colum, fist use grep to get ride of first line
+   ##then use awk to extract first coulm, and then use awk again to count number of empty index
+   empty1=$(grep [0-9] tempfile | awk -F, '{print $1}' | awk '{if($1=="")empty1 +=1}; END{print empty1 +=0}') 
+   #find mean value by dividing total by number of rows subtracted form it number of empty index
+   mean1=$(echo "scale=3;$total/($rows-$empty1)" | bc)
+   
+   #We use the same thing in other colums 
+   total=$(grep [0-9] tempfile | awk -F, '{print $2}' | awk '{ total += $1} END{print total}')
+   empty2=$(grep [0-9] tempfile | awk -F, '{print $2}' | awk '{if($1=="")empty2 += 1} END{print empty2 +=0}')
+   mean2=$(echo "scale=3;$total/($rows-$empty2)" | bc)
+    
+   total=$(grep [0-9] tempfile | awk -F, '{print $3}' | awk '{ total += $1} END{print total}')
+   empty3=$(grep [0-9] tempfile | awk -F, '{print $3}' | awk '{if($1=="")empty3 += 1} END{print empty3 +=0}')   
+   mean3=$(echo "scale=3;$total/($rows-$empty3)" | bc)
+   
+   total=$(grep [0-9] tempfile | awk -F, '{print $4}' | awk '{ total += $1} END{print total}')
+   empty4=$(grep [0-9] tempfile | awk -F, '{print $4}' | awk '{if($1=="")empty4 += 1} END{print empty4 +=0}')
+   mean4=$(echo "scale=3;$total/($rows-$empty4)" | bc)
+
+   #to replace the empty index with mean value, first get the data from tempfile
+   #then use awk to check every colums if it has any empty index to replace it with mean value for the colum which it is located
+   #then replace all space with comma to maintain format then save data in ccfile
+   cat tempfile | awk -F, '{if($1=="")$1='"$mean1"'}; {if($2=="")$2='"$mean2"'}; {if($3=="")$3='"$mean3"'}; {if($4=="")$4='"$mean4"'}; {print $0}' | tr ' ' ',' > ccfile
+   cat ccfile   #print the output of substitute
+   cp ccfile $filename    #save the result in the orginal file
+}
+
+
+#menu to choose opration
+while true
+do
+   printf "\nD: for dimension\nC: for compute statistics\nS: for substitution\nE: Exit\n"
+   read choice           #read opration from user
+
+   case $choice in       #case to do the opration which the user enter
+     "D") dimensions;;   #call function to do opration
+     "C") statistics;;
+     "S") substitute;;
+     "E") exit 0;;
+     *) echo "Enter a valid choice";;    #defult input
+   esac
+done
+
+#Tariq Odeh  1190699
+#Qays safa   1190880
