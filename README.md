@@ -12,11 +12,7 @@
  * [ENEE3309 - Communication Systems](https://github.com/Tariq0Odeh/University/tree/main/ENEE3309%20-%20Communication%20Systems) 
  * [COMP2421 - Data Structure and Algorithms](https://github.com/Tariq0Odeh/University/tree/main/COMP2421%20-%20Data%20Structure%20and%20Algorithms) 
  * [ENCS234 - Digital Systems](https://github.com/Tariq0Odeh/University/tree/main/ENCS234%20-%20Digital%20Systems) 
+ * [ENEE2304 - Circuit Analysis](https://github.com/Tariq0Odeh/University/tree/main/ENEE2304%20-%20Circuit%20Analysis) 
  * []() 
  * []() 
  * []() 
- * []() 
- * []() 
-
-
-
