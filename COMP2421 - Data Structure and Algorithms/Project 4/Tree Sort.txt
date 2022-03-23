@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node {
+    int Key ;
+    struct node * Left , *Right ;
+};
+
+struct node * create_node(int element){   //create a node
+    struct node * new_node = (struct node *)malloc(sizeof(struct node)) ;
+    new_node->Key = element ;
+    new_node->Left = NULL ;
+    new_node->Right = NULL ;
+    return new_node ;
+}
+
+void balance(struct node * n) { //traversal
+    if (n != NULL) {
+        balance(n->Left) ;
+        printf("%d | " , n->Key) ;
+        balance(n->Right) ;
+    }
+}
+
+struct node * insert_in(struct node * node , int Key) { //insert in tree
+      if (node == NULL)
+            return create_node(Key) ;
+      if (Key < node->Key)
+        node->Left = insert_in(node->Left , Key) ;
+      else
+        node->Right = insert_in(node->Right , Key) ;
+      return node ;
+}
+
+int main() {
+      struct node * Tree = NULL ;
+      int arr[] = {5, 4, 7, 2, 11, 14, 6} ;
+      int s = sizeof(arr)/sizeof(arr[0]);
+      for(int a = 0 ; a < s ; a++)
+        Tree = insert_in(Tree , arr[a]) ;
+      printf("Sorted order: | ") ;
+      balance(Tree) ;
+}//Tariq Nazieh Odeh 1190699
+
+
+
