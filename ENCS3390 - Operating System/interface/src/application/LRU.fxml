@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LRUController">
+   <children>
+      <Button layoutX="12.0" layoutY="628.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="50.0" prefWidth="161.0" text="Go back to the menu" textFill="#1750d3">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label alignment="CENTER" layoutX="149.0" layoutY="23.0" text="Virtual Memory Management Simulation-LRU" textFill="#1750d3">
+         <font>
+            <Font name="Andalus" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="137.0" prefHeight="27.0" prefWidth="171.0" text="Enter reference string :">
+         <font>
+            <Font name="Andalus" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf1" layoutX="21.0" layoutY="178.0" onAction="#select" prefHeight="77.0" prefWidth="335.0" />
+      <Line endX="190.0" fill="#1b348d" layoutX="159.0" layoutY="361.0" startX="-145.0" stroke="#1750d3" />
+      <Label fx:id="l11" layoutX="14.0" layoutY="407.0" prefHeight="43.0" prefWidth="335.0" style="-fx-border-color: #1750D3;">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="369.0" text="Reference string = ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Line endX="851.0" endY="-7.0" fill="#1b348d" layoutX="-16.0" layoutY="81.0" startX="49.29289245605469" startY="-1.0" stroke="#1750d3" />
+      <Label layoutX="530.0" layoutY="131.0" prefHeight="27.0" prefWidth="143.0" text="The result :" textFill="#2937d7">
+         <font>
+            <Font name="Arial Nova Cond Bold" size="21.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" fill="#1b348d" layoutX="585.0" layoutY="164.0" startX="-100.0" stroke="#1750d3" />
+      <TextArea editable="false" layoutX="418.0" layoutY="186.0" prefHeight="505.0" prefWidth="151.0" />
+      <VBox layoutX="593.0" layoutY="216.0" prefHeight="122.0" prefWidth="335.0" spacing="20.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="95.0" prefWidth="247.0" style="-fx-border-color: #1750D3;">
+               <children>
+                  <Label contentDisplay="CENTER" text="Length of reference string :">
+                     <font>
+                        <Font name="Andalus" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l1" prefHeight="27.0" prefWidth="118.0" style="-fx-border-color: #1750D3;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #1750D3;">
+               <children>
+                  <Label contentDisplay="CENTER" text="Number of virtual pages :   ">
+                     <font>
+                        <Font name="Andalus" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l2" prefHeight="29.0" prefWidth="120.0" style="-fx-border-color: #1750D3;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #1750D3;">
+               <children>
+                  <Label contentDisplay="CENTER" text="Number of physical pages :">
+                     <font>
+                        <Font name="Andalus" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l3" prefHeight="30.0" prefWidth="121.0" style="-fx-border-color: #1750D3;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #1750D3;">
+               <children>
+                  <Label contentDisplay="CENTER" text="Number of Page faults:   ">
+                     <font>
+                        <Font name="Andalus" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l4" prefHeight="30.0" prefWidth="121.0" style="-fx-border-color: #1750D3;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #1750D3;">
+               <children>
+                  <Label contentDisplay="CENTER" text="Victim frame:">
+                     <font>
+                        <Font name="Andalus" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l5" prefHeight="30.0" prefWidth="121.0" style="-fx-border-color: #1750D3;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="135.0" layoutY="542.0" mnemonicParsing="false" onAction="#run" prefHeight="34.0" prefWidth="77.0" style="-fx-border-color: #1750D3;" text="Run">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Line endX="-106.0" endY="537.0" layoutX="484.0" layoutY="125.0" startX="-100.0" />
+      <Line endX="190.0" fill="#1b348d" layoutX="159.0" layoutY="533.0" startX="-145.0" stroke="#1750d3" />
+      <Label fx:id="l111" layoutX="103.0" layoutY="482.0" prefHeight="7.0" prefWidth="151.0" style="-fx-border-color: #1750D3;">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="450.0" text="Number of frames = ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="271.0" prefHeight="27.0" prefWidth="201.0" text="Enter number of frames :">
+         <font>
+            <Font name="Andalus" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf11" layoutX="60.0" layoutY="306.0" onAction="#select" prefHeight="34.0" prefWidth="225.0" />
+   </children>
+</AnchorPane>

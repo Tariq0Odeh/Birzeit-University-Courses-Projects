@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="1160.0" style="-fx-background-color: snow;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.scene1Controller">
+   <children>
+      <Button layoutX="443.0" layoutY="664.0" mnemonicParsing="false" onAction="#switchToScene2" style="-fx-background-color: CORNSILK; -fx-border-color: blue;" text="Go to menu" textAlignment="CENTER" textFill="#19cf56">
+         <font>
+            <Font name="Andalus" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <HBox alignment="CENTER" layoutX="286.0" layoutY="278.0" prefHeight="100.0" prefWidth="200.0" spacing="50.0" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="270.0">
+         <children>
+            <ImageView fitHeight="219.0" fitWidth="206.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/mahmoud.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="206.0" fitWidth="322.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/qays.jpg" />
+               </image>
+            </ImageView>
+            <ImageView cache="true" fitHeight="210.0" fitWidth="251.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/tariq.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Pane layoutX="217.0" layoutY="261.0" prefHeight="370.0" prefWidth="727.0" style="-fx-border-color: blue;">
+         <children>
+            <HBox layoutX="1.0" layoutY="247.0" prefHeight="117.0" prefWidth="727.0">
+               <children>
+                  <VBox prefHeight="150.0" prefWidth="241.0" spacing="20.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mahmoud Samara" textAlignment="CENTER" wrappingWidth="240.80078125">
+                           <font>
+                              <Font name="Andalus" size="23.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1191602" textAlignment="CENTER" wrappingWidth="240.80078125">
+                           <font>
+                              <Font name="Andalus" size="23.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="150.0" prefWidth="241.0" spacing="20.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="  Qays Safa" textAlignment="CENTER" wrappingWidth="240.80078125">
+                           <font>
+                              <Font name="Andalus" size="23.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="  1190880" textAlignment="CENTER" wrappingWidth="240.80078125">
+                           <font>
+                              <Font name="Andalus" size="23.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="150.0" prefWidth="241.0" spacing="20.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tariq Odeh" textAlignment="CENTER" wrappingWidth="240.80078125">
+                           <font>
+                              <Font name="Andalus" size="23.0" />
+                           </font>
+                        </Text>
+                        <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="1190699" textAlignment="CENTER" wrappingWidth="240.80078125">
+                           <font>
+                              <Font name="Andalus" size="23.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="481.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bzu-footer-logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="398.0" layoutY="147.0" style="-fx-background-color: white; -fx-border-color: blue;" text="Welcom to our project" textAlignment="CENTER" textFill="#025a80">
+         <font>
+            <Font name="Andalus" size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="224.0" fitWidth="217.0" layoutX="-24.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/co.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="224.0" fitWidth="217.0" layoutX="969.0" layoutY="-18.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/co.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="exit" layoutX="627.0" layoutY="664.0" mnemonicParsing="false" onAction="#EXIT" style="-fx-background-color: CORNSILK; -fx-border-color: blue;" text="Exit" textAlignment="CENTER" textFill="#19cf56">
+         <font>
+            <Font name="Andalus" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

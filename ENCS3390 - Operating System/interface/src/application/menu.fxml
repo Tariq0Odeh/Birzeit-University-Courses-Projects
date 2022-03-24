@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="552.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menuController">
+   <children>
+      <Label layoutX="261.0" layoutY="14.0" text="Menu">
+         <font>
+            <Font name="Andalus" size="21.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" fill="#3fb6da" layoutX="286.0" layoutY="47.0" startX="-100.0" stroke="#1750d3" />
+      <HBox layoutX="150.0" layoutY="71.0" prefHeight="33.0" prefWidth="300.0">
+         <children>
+            <Label text="Enter file name :    " textFill="#1750d3">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="mtf" />
+         </children>
+      </HBox>
+      <Button layoutX="261.0" layoutY="113.0" mnemonicParsing="false" text="Read" textFill="#1750d3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="196.0" layoutY="176.0" text="Select the algorithm ">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="140.0" layoutY="214.0" prefHeight="67.0" prefWidth="279.0" spacing="30.0" style="-fx-border-color: #1750d3;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#switchToFIFO" text="FIFO" textFill="#1750d3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToLRU" text="LRU" textFill="#1750d3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToRR" prefHeight="39.0" prefWidth="63.0" text="RR" textFill="#1750d3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Line endX="205.0" fill="#3fb6da" layoutX="280.0" layoutY="166.0" startX="-213.0" stroke="#1750d3" />
+   </children>
+</Pane>
