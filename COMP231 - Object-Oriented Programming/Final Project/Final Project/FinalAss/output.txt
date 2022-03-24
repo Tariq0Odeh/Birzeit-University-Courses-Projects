@@ -1,0 +1,21 @@
+ModelName: Aqua, Brand: Toyota, Owner: Nader, EngineType: Hybrid, TankSize: 36.0, 
+FuelConsumption: 40.0, NumberOfSeat: 5, Movable distance: 1440.0 km, Cost for 100 Km: 13.075000000000001 NIS
+
+ModelName: Camley, Brand: Toyota, Owner: Ahmad, EngineType: Gasoline, TankSize: 70.0, 
+FuelConsumption: 15.15, NumberOfSeat: 5, Movable distance: 1060.5 km, Cost for 100 Km: 34.521452145214525 NIS
+
+ModelName: Odyssey, Brand: Honda, Owner: Khaled, EngineType: Diesel, TankSize: 56.0, 
+FuelConsumption: 11.0, NumberOfSeat: 8, Movable distance: 616.0 km, Cost for 100 Km: 36.54545454545455 NIS
+
+ModelName: Ridgeline, Brand: Honda, Owner: Waleed, EngineType: Diesel, TankSize: 83.279, 
+FuelConsumption: 7.23, NumberOfSeat: 250, Movable distance: 602.10717 km, Cost for 100 Km: 55.60165975103733 NIS
+
+ModelName: Sienna, Brand: Toyota, Owner: Malik, EngineType: Gasoline, TankSize: 75.0, 
+FuelConsumption: 9.0, NumberOfSeat: 8, Movable distance: 675.0 km, Cost for 100 Km: 58.111111111111114 NIS
+
+ModelName: Tundra, Brand: Toyota, Owner: Sami, EngineType: Diesel, TankSize: 100.0, 
+FuelConsumption: 6.76, NumberOfSeat: 310, Movable distance: 676.0 km, Cost for 100 Km: 59.46745562130177 NIS
+
+ModelName: Presage, Brand: Nissan, Owner: Shaher, EngineType: Gasoline, TankSize: 60.0, 
+FuelConsumption: 7.0, NumberOfSeat: 7, Movable distance: 420.0 km, Cost for 100 Km: 74.71428571428572 NIS
+

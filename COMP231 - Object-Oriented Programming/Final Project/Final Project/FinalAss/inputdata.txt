@@ -1,0 +1,7 @@
+Car,Camley,E100,Toyota,Ahmad,Gasoline,70.0,15.15,5
+Car,Aqua,ES500,Toyota,Nader,Hybrid,36.0,40.0,5
+MiniVan,Sienna,A4,Toyota,Malik,Gasoline,75.0,9.0,8,true
+MiniVan,Odyssey,S500,Honda,Khaled,Diesel,56.0,11.0,8,false
+MiniVan,Presage,BX5000,Nissan,Shaher,Gasoline,60.0,7.0,7,false
+Truck,Tundra,EDGE500,Toyota,Sami,Diesel,100.0,6.76,5,310
+Truck,Ridgeline,DUG700,Honda,Waleed,Diesel,83.279,7.23,5,250
