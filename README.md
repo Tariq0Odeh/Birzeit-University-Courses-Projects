@@ -15,4 +15,4 @@
  * [ENEE2304 - Circuit Analysis](https://github.com/Tariq0Odeh/University/tree/main/ENEE2304%20-%20Circuit%20Analysis) 
  * [COMP231 - Object-Oriented Programming](https://github.com/Tariq0Odeh/University/tree/main/COMP231%20-%20Object-Oriented%20Programming) 
  * [ENCS3320 - Computer Networks](https://github.com/Tariq0Odeh/University/tree/main/ENCS3320%20-%20Computer%20Networks) 
- * []() 
+ * [ENCS3390 - Operating System](https://github.com/Tariq0Odeh/University/tree/main/ENCS3390%20-%20Operating%20System) 
