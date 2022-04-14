@@ -3,7 +3,6 @@
    ![](BZU_logo.png)
    
    
-   
   - Repository For My University Projects and Assignments At Birzeit University  
 ## Courses :
  * [COMP133 - Computer and Programming](https://github.com/Tariq0Odeh/University/tree/main/COMP133%20-%20Computer%20and%20Programming) 
