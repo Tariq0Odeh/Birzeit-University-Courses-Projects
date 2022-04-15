@@ -1,7 +1,6 @@
  <H1 align="center" > <strong> University Archive </strong> </H1>
  
    ![](BZU_logo.png)
-   
  
  
  
