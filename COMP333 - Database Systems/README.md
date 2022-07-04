@@ -1,1 +1,29 @@
-sds
+ <H1 align="center" > <strong> COMP33 Project </strong> </H1>
+
+ <H2 align="center" > <strong> Safa Law Office </strong> </H2>
+ 
+ ![](https://github.com/Tariq0Odeh/University/blob/main/COMP333%20-%20Database%20Systems/1.png)
+  
+  [](https://github.com/Tariq0Odeh/University/blob/main/COMP333%20-%20Database%20Systems/2.png)
+
+ *  Cases
+ *  Reservation
+ *  Coustomers
+ *  Lawyers
+ *  Notifications
+ *  Payment
+ *  Dates 
+ *  Relationships 
+ ***
+ <details align="center">
+<summary><b> Random ScreenShots ✔⭐</b></summary>
+<table>
+  <thead>
+ </p>
+ 
+
+
+<br />
+</table>
+</details>
+
