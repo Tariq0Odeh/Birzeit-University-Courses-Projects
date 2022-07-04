@@ -6,7 +6,8 @@
 ## Courses: 
  * [COMP133 - Computer and Programming](https://github.com/Tariq0Odeh/University/tree/main/COMP133%20-%20Computer%20and%20Programming) 
  * [COMP231 - Object-Oriented Programming](https://github.com/Tariq0Odeh/University/tree/main/COMP231%20-%20Object-Oriented%20Programming) 
- * [COMP2421 - Data Structure and Algorithms](https://github.com/Tariq0Odeh/University/tree/main/COMP2421%20-%20Data%20Structure%20and%20Algorithms) 
+ * [COMP2421 - Data Structure and Algorithms](https://github.com/Tariq0Odeh/University/tree/main/COMP2421%20-%20Data%20Structure%20and%20Algorithms)
+ * [COMP333 - Database Systems](https://github.com/Tariq0Odeh/University/tree/main/COMP333%20-%20Database%20Systems) 
  * [ENCS234 - Digital Systems](https://github.com/Tariq0Odeh/University/tree/main/ENCS234%20-%20Digital%20Systems) 
  * [ENCS2380 - Computer Organization and Microprocessor](https://github.com/Tariq0Odeh/University/tree/main/ENCS2380%20-%20Computer%20Organization%20and%20Microprocessor)
  * [ENCS3130 - Linux Laboratory](https://github.com/Tariq0Odeh/University/tree/main/ENCS3130%20-%20Linux%20Laboratory) 
