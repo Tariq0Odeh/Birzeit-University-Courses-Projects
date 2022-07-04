@@ -13,7 +13,7 @@
  * [ENCS3310 - Advanced Digital Systems Design](https://github.com/Tariq0Odeh/University/tree/main/ENCS3310%20-%20Advanced%20Digital%20Systems%20Design) 
  * [ENCS3320 - Computer Networks](https://github.com/Tariq0Odeh/University/tree/main/ENCS3320%20-%20Computer%20Networks) 
  * [ENCS3390 - Operating System](https://github.com/Tariq0Odeh/University/tree/main/ENCS3390%20-%20Operating%20System) 
- * [ENCS4310 - DIGITAL SIGNAL PROCESSING (DSP)](https://github.com/Tariq0Odeh/University/tree/main/ENCS4310%20-%20DIGITAL%20SIGNAL%20PROCESSING%20(DSP)) 
+ * [ENCS4310 - Digital Signal Processing (DSP)](https://github.com/Tariq0Odeh/University/tree/main/ENCS4310%20-%20Digital%20Signal%20Processing%20(DSP)) 
  * [ENEE2304 - Circuit Analysis](https://github.com/Tariq0Odeh/University/tree/main/ENEE2304%20-%20Circuit%20Analysis) 
  * [ENEE2312 - Signals and Systems](https://github.com/Tariq0Odeh/University/tree/main/ENEE2312%20-%20Signals%20and%20Systems) 
  * [ENEE3309 - Communication Systems](https://github.com/Tariq0Odeh/University/tree/main/ENEE3309%20-%20Communication%20Systems) 
