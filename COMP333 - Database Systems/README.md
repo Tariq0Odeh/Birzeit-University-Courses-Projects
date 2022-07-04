@@ -15,15 +15,18 @@
  *  Relationships 
  ***
  <details align="center">
-<summary><b> Random ScreenShots ✔⭐</b></summary>
+<summary><b> Random ScreenShots ✔</b></summary>
 <table>
   <thead>
  </p>
+ 
  ![](https://github.com/Tariq0Odeh/University/blob/main/COMP333%20-%20Database%20Systems/2.png)
  ![](https://github.com/Tariq0Odeh/University/blob/main/COMP333%20-%20Database%20Systems/3.png)
  ![](https://github.com/Tariq0Odeh/University/blob/main/COMP333%20-%20Database%20Systems/4.png)
  ![](https://github.com/Tariq0Odeh/University/blob/main/COMP333%20-%20Database%20Systems/5.png)
+ 
 <br />
 </table>
 </details>
 
+***
