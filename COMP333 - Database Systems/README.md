@@ -1,7 +1,11 @@
- <H1 align="center" > <strong> COMP33 Project </strong> </H1>
+ <H1 align="center" > <strong> COMP333 Project </strong> </H1>
 
  <H2 align="center" > <strong> Safa Law Office </strong> </H2>
- 
+ ___________________________________________________________
+ # Course Description
+Overview of database system, introduction to database design, Relational model , Relational algebra , Query language , Normalization , Connectivity with a programming language, overview of storage and indexing, Query evaluation and optimization , Transactions.
+ ___________________________________________________________
+
  ![](https://github.com/Tariq0Odeh/University/blob/main/COMP333%20-%20Database%20Systems/1.png)
   
 
@@ -21,8 +25,14 @@
  </p>
  
  ![](https://github.com/Tariq0Odeh/University/blob/main/COMP333%20-%20Database%20Systems/2.png)
+ 
+ 
  ![](https://github.com/Tariq0Odeh/University/blob/main/COMP333%20-%20Database%20Systems/3.png)
+ 
+ 
  ![](https://github.com/Tariq0Odeh/University/blob/main/COMP333%20-%20Database%20Systems/4.png)
+ 
+ 
  ![](https://github.com/Tariq0Odeh/University/blob/main/COMP333%20-%20Database%20Systems/5.png)
  
 <br />
