@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="777.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Defendant_case_informationController">
+   <children>
+      <ImageView fitHeight="515.0" fitWidth="959.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/ground.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="96.0" prefWidth="777.0" style="-fx-background-color: #101929;">
+         <children>
+            <Label layoutX="14.0" layoutY="1.0" prefHeight="94.0" prefWidth="718.0" text="Defendant's case information" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="55.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="Defendant_ID_name__S" alignment="CENTER" layoutX="285.0" layoutY="117.0" prefHeight="34.0" prefWidth="245.0" promptText="Searsh by Defendant_ID or Name " style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <TableView fx:id="NotificationTable" layoutX="19.0" layoutY="158.0" prefHeight="242.0" prefWidth="744.0">
+         <columns>
+            <TableColumn fx:id="Defendant_ID" prefWidth="84.0" text="Defendant_ID" />
+            <TableColumn fx:id="P_name" prefWidth="76.0" text="P_name" />
+            <TableColumn fx:id="Lawyer_Name" prefWidth="147.0" text="Lawyer_Name" />
+            <TableColumn fx:id="Date_of_session" prefWidth="170.0" text="Date_of_session" />
+            <TableColumn fx:id="D_time" prefWidth="93.0" text="D_time" />
+            <TableColumn fx:id="case_number_in_the_court" prefWidth="179.0" text="case_number_in_the_court" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="253.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/search.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Back" layoutX="288.0" layoutY="436.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="206.0" stylesheets="@../../bin/application/application.css">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="373.0" layoutY="410.0" prefHeight="26.0" prefWidth="41.0" text="Back">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

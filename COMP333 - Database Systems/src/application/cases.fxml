@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="761.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.casesController">
+   <children>
+      <ImageView fitHeight="546.0" fitWidth="927.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ground.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="667.0" fitWidth="728.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ground.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="15.0" layoutY="704.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="52.0" stylesheets="@application.css">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="NotificationTable" layoutX="15.0" layoutY="161.0" prefHeight="200.0" prefWidth="409.0">
+         <columns>
+            <TableColumn fx:id="Case_id" prefWidth="193.59997940063477" text="Case_id" />
+            <TableColumn fx:id="Case_number_in_the_court" prefWidth="193.6000213623047" text=" Case number in the court" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="Right" alignment="CENTER" contentDisplay="TOP" layoutX="464.0" layoutY="161.0" mnemonicParsing="false" onAction="#Right" prefHeight="91.0" prefWidth="191.0" stylesheets="@application.css" text="Rights cases" textFill="#333633">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/r1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Resumption" alignment="CENTER" contentDisplay="TOP" layoutX="464.0" layoutY="375.0" mnemonicParsing="false" onAction="#Resumption" prefHeight="97.0" prefWidth="191.0" stylesheets="@application.css" text="Resumption cases" textFill="#2c2c2f">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="56.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/r2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Penalty" alignment="CENTER" contentDisplay="TOP" layoutX="465.0" layoutY="269.0" mnemonicParsing="false" onAction="#Penalty" prefHeight="79.0" prefWidth="191.0" stylesheets="@application.css" text="Penalty cases" textFill="#252528">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Penalty.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="execution" alignment="CENTER" contentDisplay="TOP" layoutX="464.0" layoutY="488.0" mnemonicParsing="false" onAction="#execution" prefHeight="79.0" prefWidth="191.0" stylesheets="@application.css" text="Execution cases" textFill="#2c2c2f">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Execution.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="Case_ID_s" alignment="CENTER" layoutX="118.0" layoutY="105.0" prefHeight="33.0" prefWidth="206.0" promptText="Searsh by Case_ID :" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <AnchorPane prefHeight="94.0" prefWidth="728.0" style="-fx-background-color: #101929;">
+         <children>
+            <Label layoutX="281.0" prefHeight="94.0" prefWidth="166.0" text="Cases" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="65.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="Case_id_A" layoutX="36.0" layoutY="427.0" prefHeight="33.0" prefWidth="166.0" promptText="Case_id" />
+      <TextField fx:id="Case_number_in_the_court_A" layoutX="36.0" layoutY="475.0" prefHeight="33.0" prefWidth="166.0" promptText=" Case number in the court" />
+      <Button fx:id="add" layoutX="33.0" layoutY="568.0" mnemonicParsing="false" onAction="#add" prefHeight="32.0" prefWidth="166.0" stylesheets="@application.css">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/add.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="update" layoutX="240.0" layoutY="568.0" mnemonicParsing="false" onAction="#update" prefHeight="32.0" prefWidth="166.0" stylesheets="@application.css">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/up.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="delete" layoutX="280.0" layoutY="710.0" mnemonicParsing="false" onAction="#delete" prefHeight="32.0" prefWidth="166.0" stylesheets="@application.css">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/delete.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="Case_id_U" layoutX="240.0" layoutY="460.0" prefHeight="33.0" prefWidth="166.0" promptText="Case_id" />
+      <TextField fx:id="Case_number_in_the_court_U" layoutX="240.0" layoutY="507.0" prefHeight="33.0" prefWidth="166.0" promptText=" Case number in the court" />
+      <Separator layoutX="75.0" layoutY="633.0" prefHeight="3.0" prefWidth="577.0" />
+      <Separator layoutX="216.0" layoutY="374.0" orientation="VERTICAL" prefHeight="171.0" prefWidth="6.0" />
+      <TextField fx:id="Case_id_D" layoutX="281.0" layoutY="670.0" prefHeight="33.0" prefWidth="166.0" promptText="Case_id" />
+      <TextField fx:id="Old_Case_ID" layoutX="240.0" layoutY="411.0" prefHeight="33.0" prefWidth="166.0" promptText="Old Case_ID" />
+      <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="72.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/search.png" />
+         </image>
+      </ImageView>
+      <Label contentDisplay="CENTER" layoutX="61.0" layoutY="393.0" prefHeight="26.0" prefWidth="110.0" text="Add To Table" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="258.0" layoutY="380.0" prefHeight="26.0" prefWidth="130.0" text="Update To Table">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="295.0" layoutY="635.0" prefHeight="25.0" prefWidth="137.0" text="Delete from table">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="673.0" prefHeight="26.0" prefWidth="41.0" text="Back">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="statistic" alignment="CENTER" contentDisplay="TOP" layoutX="522.0" layoutY="642.0" mnemonicParsing="false" onAction="#statistic" prefHeight="79.0" prefWidth="191.0" stylesheets="@application.css" text="Statistics " textFill="#2c2c2f">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/statistics.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

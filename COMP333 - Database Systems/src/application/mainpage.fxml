@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainpageController">
+   <children>
+      <ImageView fitHeight="411.0" fitWidth="701.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/main-page.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="278.0" fitWidth="420.0" layoutX="37.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/login-2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="admin" layoutX="102.0" layoutY="241.0" mnemonicParsing="false" onAction="#adminbutton" prefHeight="37.0" prefWidth="148.0" styleClass="login_button" stylesheets="@application.css" text="Admin" textFill="#efefef">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="lawer" layoutX="102.0" layoutY="305.0" mnemonicParsing="false" onAction="#lawerbutton" prefHeight="37.0" prefWidth="148.0" styleClass="login_button" stylesheets="@application.css" text="Lawyer" textFill="#efefef">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</Pane>

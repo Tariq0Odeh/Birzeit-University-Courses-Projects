@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LawyerPageController">
+   <children>
+      <GridPane hgap="7.0" layoutX="31.0" layoutY="171.0" prefHeight="462.0" prefWidth="845.0" vgap="7.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="Customers" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#Customers" prefHeight="130.0" prefWidth="294.0" style="-fx-background-radius: 10px;" stylesheets="@application.css" text="Customers" textFill="#0d0d0d" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <graphic>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="45.0" style="-fx-background-color: #E1E4E7;">
+                     <graphic>
+                        <ImageView fitHeight="53.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
+            <Button fx:id="Logout" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#LogOut" prefHeight="130.0" prefWidth="283.0" style="-fx-background-radius: 10px;" stylesheets="@application.css" text="Logout" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <graphic>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="45.0" style="-fx-background-color: #E1E4E7;">
+                     <graphic>
+                        <ImageView fitHeight="53.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
+            <Button fx:id="Reservations" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#Reservations" prefHeight="130.0" prefWidth="294.0" style="-fx-background-radius: 10px;" stylesheets="@application.css" text="Reservations" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <graphic>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="45.0" style="-fx-background-color: #E1E4E7;">
+                     <graphic>
+                        <ImageView fitHeight="47.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Reservations.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
+            <Button fx:id="Cases" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#Cases" prefHeight="130.0" prefWidth="294.0" style="-fx-background-radius: 10px;" stylesheets="@application.css" text="Cases">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <graphic>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="45.0" style="-fx-background-color: #E1E4E7;">
+                     <graphic>
+                        <ImageView fitHeight="49.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/cases.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
+            <Button fx:id="Notifications" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#Notifications" prefHeight="130.0" prefWidth="294.0" style="-fx-background-radius: 10px;" stylesheets="@application.css" text="Notifications" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <graphic>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="45.0" style="-fx-background-color: #E1E4E7;">
+                     <graphic>
+                        <ImageView fitHeight="53.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/notification.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
+            <Button fx:id="date" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#date" prefHeight="130.0" prefWidth="294.0" style="-fx-background-radius: 10px;" stylesheets="@application.css" text="Dates" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <graphic>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="45.0" style="-fx-background-color: #E1E4E7;">
+                     <graphic>
+                        <ImageView fitHeight="63.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/date.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
+         </children>
+      </GridPane>
+      <Pane prefHeight="155.0" prefWidth="900.0" style="-fx-background-color: #101929;">
+         <children>
+            <Label layoutX="44.0" layoutY="20.0" style="-fx-background-color: #ffffff; -fx-background-radius: 40;">
+               <graphic>
+                  <ImageView fitHeight="128.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label layoutX="214.0" layoutY="35.0" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="52.0" />
+               </font>
+            </Label>
+            <Label layoutX="214.0" layoutY="47.0" text="Lawyer Dash Bord" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="65.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

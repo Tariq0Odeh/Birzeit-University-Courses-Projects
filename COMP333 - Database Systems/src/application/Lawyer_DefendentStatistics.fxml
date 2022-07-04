@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Lawyer_DefendentsStatisticsController">
+   <children>
+      <AnchorPane layoutX="-5.0" layoutY="-4.0" prefHeight="516.0" prefWidth="620.0">
+         <children>
+            <StackedBarChart fx:id="barChart2" layoutX="10.0" layoutY="11.0" prefHeight="474.0" prefWidth="610.0" title="Total_number_of_cases_with_Defendents">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </StackedBarChart>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

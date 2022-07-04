@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="721.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RelationshipsController">
+   <children>
+      <AnchorPane prefHeight="109.0" prefWidth="721.0" style="-fx-background-color: #101929;">
+         <children>
+            <Label layoutX="166.0" layoutY="14.0" prefHeight="94.0" prefWidth="389.0" text="Relationships" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="65.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="Defendant_Lawyer_Cases" alignment="CENTER" contentDisplay="TOP" layoutX="21.0" layoutY="207.0" mnemonicParsing="false" onAction="#Defendant_Lawyer_Cases" prefHeight="116.0" prefWidth="240.0" stylesheets="@application.css" text="Defendant-Lawyer-Cases" textFill="#2c2c2f">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="72.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/r2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="188.0" layoutY="144.0" prefHeight="75.0" prefWidth="373.0" text="Please choose the type of relationships:" textAlignment="JUSTIFY" textFill="#141414">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="21.0" layoutY="377.0" mnemonicParsing="false" onAction="#back" prefHeight="42.0" prefWidth="44.0" stylesheets="@application.css">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="31.0" layoutY="353.0" prefHeight="26.0" prefWidth="41.0" text="Back">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="Plaintiff_Cases_lawyer" alignment="CENTER" contentDisplay="TOP" layoutX="270.0" layoutY="207.0" mnemonicParsing="false" onAction="#Plaintiff_Cases_lawyer" prefHeight="116.0" prefWidth="209.0" stylesheets="@application.css" text="Plaintiff-Cases-lawyer" textFill="#2c2c2f">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/chart.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Paymant" alignment="CENTER" contentDisplay="TOP" layoutX="496.0" layoutY="207.0" mnemonicParsing="false" onAction="#Paymant" prefHeight="116.0" prefWidth="210.0" stylesheets="@application.css" text="Payment_cases_lawyer" textFill="#2c2c2f">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="72.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/r2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
