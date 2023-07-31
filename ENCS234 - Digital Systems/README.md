@@ -1,13 +1,9 @@
-# Digital Systems (ENCS234)
+# Information and Coding Theory (ENEE5304) ENEE5304 
 ___________________________________________________________
 # Course Description
-Number Systems. Boolean Algebra. Logic gates. Design of Combinational Logic. Logic families, interfacing between logic families. Sequential logic: latches, flip-flops, state diagrams and excitation tables. Design of registers, counters, and sequential systems, derivation of state tables and state diagrams. Memory devices. Intro to Programmable Logic Devices, and Hardware Description Languages. Overview on digital Integrated circuits.
+Information measure, information sources, entropy, source coding, unique optimal codes, the first Shannon's theorem, discrete channels, mutual information, conditional entropy, channel capacity, Shannon’s second theorem, error detection and correction codes, transmission strategies, linear block codes, cyclic codes, convolutional codes, Trellis.
 ___________________________________________________________
-# ENCS234 Course Project
-[HDL]
+# ENEE5304 Course Project
 
-Building the Quartus project, and write down one report that includes the following items: 
-1. System Design. 
-2. Verilog code. 
-3. Simulation results
+Lempel-Ziv and Huffman Encoding of Random Symbols
 ___________________________________________________________
