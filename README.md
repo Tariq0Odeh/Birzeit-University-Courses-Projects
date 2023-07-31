@@ -16,7 +16,7 @@
  * [ENCS3340 - Artificial Intelligence](https://github.com/Tariq0Odeh/University/tree/main/ENCS3340%20-%20Artificial%20Intelligence) 
  * [ENCS3390 - Operating System](https://github.com/Tariq0Odeh/University/tree/main/ENCS3390%20-%20Operating%20System) 
  * [ENCS4310 - Digital Signal Processing (DSP)](https://github.com/Tariq0Odeh/University/tree/main/ENCS4310%20-%20Digital%20Signal%20Processing%20(DSP))
- * [ENCS4320 - Applied Cryptography](https://github.com/Tariq0Odeh/University/tree/main/ENCS432020%-20%Applied20%Cryptography) 
+ * [ENCS4320 - Applied Cryptography](https://github.com/Tariq0Odeh/University/tree/main/ENCS4320%20-%20Applied%20Cryptography) 
  * [ENCS4330 - Real Time Applications and Embedded System](https://github.com/Tariq0Odeh/University/tree/main/ENCS4330%20-%20Real%20Time%20Applications%20and%20Embedded%20System) 
  * [ENEE2304 - Circuit Analysis](https://github.com/Tariq0Odeh/University/tree/main/ENEE2304%20-%20Circuit%20Analysis) 
  * [ENEE2312 - Signals and Systems](https://github.com/Tariq0Odeh/University/tree/main/ENEE2312%20-%20Signals%20and%20Systems) 
